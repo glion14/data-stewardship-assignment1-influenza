@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/358875830.svg)](https://zenodo.org/badge/latestdoi/358875830)
+
 # Influenza predictions in Vienna (Data Stewardship TU Wien 2021)
 
 # Description
