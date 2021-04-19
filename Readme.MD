@@ -40,6 +40,23 @@ influenza data, `'./data/weather/*.csv'` for weather data.
 
 To create your own predictions, please run the validation with `'./data/influenza/influenza_predict.csv''`
 
+## Directory structure
+
+- data/
+
+    - influenza/ - contains train and test data for influenza occurences from Vienna
+    - weather/ - contains weather data from Vienna
+
+- dmp/ - contains DMP as well as maDMP
+
+- src/ 
+    - infleunza_analysis.ipynb - contains all of the source code needed to reproduce the experiment
+
+- visualizations/ - contains all visualizations made in the Jupyter notebook on top of the data
+    
+
+
+
 To run sample experiment, simply run all of the cells. Also, make sure the random seed is set to 20 in order to reproduce the results.
 Sample code for the linear regression:
 
