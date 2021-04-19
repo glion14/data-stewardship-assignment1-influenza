@@ -1,7 +1,7 @@
 {
 	"dmp": {
         "title": "Predicting influenza infections in Vienna based on weather",
-        "description": "The goal of this experiment was to model the relationship between weather observations and the prevalence of new influenza infections. It included reading, preparing and transforming data. Subsequently, these data were visualized and used for building a prediction model - we tried to predict influenza infections based on weather conditions.",
+        "description": "Main objective of this project is to exercise data visualization, preprocessing and simple modeling options. For visualizations, multiple techniques were shown, whereas in modeling phase only Linear Regression was used.",
         "created": "2021-04-12T14:00:00.000Z",
         "modified": "2021-04-18T12:54:00.000Z",
         "dmp_id": {
