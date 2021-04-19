@@ -35,17 +35,21 @@ Then run all of those commands to install dependencies:
 in order to install all the necessary dependencies.
 
 # Usage
-To run sample experiment, simply run all of the cells.  
+It is very important that you set up correct path to the data files. The default placement is in `'./data/influenza/infleunza.csv'` for
+influenza data, `'./data/weather/*.csv'` for weather data.
+
+To create your own predictions, please run the validation with `'./data/influenza/influenza_predict.csv''`
+
+To run sample experiment, simply run all of the cells. Also, make sure the random seed is set to 20 in order to reproduce the results.
 Sample code for the linear regression:
 
 `
+    
     X = data_merged[predictors].values
     y = data_merged[target_column].values
     
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.1, random_state=20)
-    #print(X_train.shape); print(X_test.shape)
-    
-    ####Linear regression
+
     lr = LinearRegression()
     lr.fit(X_train, y_train.ravel()) 
     pred_train_lr = lr.predict(X_train)
@@ -55,9 +59,9 @@ Sample code for the linear regression:
     print("R2 of testing data  for Linear Regression:\t",r2_score(y_test, pred_test_lr))
     
     pred_final_data_lr = lr.predict(data_merged_predict[predictors])
-    print("Train:\n", pred_train_lr)
-    print("\nTest:\n", pred_test_lr)
-    print("\nFinal prediction:\n", pred_final_data_lr)
+    print("Train:", pred_train_lr)
+    print("Test:", pred_test_lr)
+    print("Prediction:\n", pred_final_data_lr)
 `
 
 # Contributing
@@ -74,6 +78,7 @@ We follow the git-flow process. Please check [this](https://danielkummer.github.
 5. Push to the Branch
 
 6. Open a Pull Request
+
 # Credits
 To Katalog Grippemeldedienst der Stadt Wien for data about [influenza occurences](https://www.data.gv.at/katalog/dataset/grippemeldedienst-stadt-wien/resource/fa5edf7a-4236-45d4-a81e-c803eb4450fc). 
 
