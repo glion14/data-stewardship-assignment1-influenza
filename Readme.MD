@@ -1,4 +1,8 @@
-[![DOI](https://zenodo.org/badge/358875830.svg)](https://zenodo.org/badge/latestdoi/358875830)
+Source code: [![DOI](https://zenodo.org/badge/358875830.svg)](https://zenodo.org/badge/latestdoi/358875830)
+
+Data produced in the experiment:
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4701590.svg)](https://doi.org/10.5281/zenodo.4701590)
+
 
 # Influenza predictions in Vienna (Data Stewardship TU Wien 2021)
 
